@@ -1,5 +1,6 @@
 //////Global variables//////
 var originalCalculatorBox = document.getElementById("cal-box").cloneNode(true);
+var originalActivityRow = document.getElementsByClassName("activity-row")[0].cloneNode(true);
 
 //////Main functions//////
 function updatePercentage()
@@ -65,7 +66,7 @@ function mean()
 function newActivity()
 {
   var table = document.getElementById("grade-table");
-  var originalTr = document.getElementsByClassName("activity-row")[0];
+  var originalTr = originalActivityRow.cloneNode(true);
   var tr = originalTr.cloneNode(true);
   table.appendChild(tr);
 }
