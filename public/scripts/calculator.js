@@ -1,4 +1,7 @@
-//Main functions//
+//////Global variables//////
+var originalCalculatorBox = document.getElementById("cal-box").cloneNode(true);
+
+//////Main functions//////
 function updatePercentage()
 {
   var gradeList = document.getElementsByClassName("actual-grade");
@@ -63,16 +66,22 @@ function newActivity()
   var table = document.getElementById("grade-table");
   var originalTr = document.getElementsByClassName("activity-row")[0];
   var tr = originalTr.cloneNode(true);
-//  updateNewRow(tr);
   table.appendChild(tr);
 }
+/*
+function newCalculatorBox()
+{
+  var cloneCalculatorBox = originalCalculatorBox.cloneNode(true);
+  var parent = document.getElementById("cal-background-box");
+  parent.appendChild(cloneCalculatorBox);
+}
 
-function copyText()////////
+function copyText()
 {
   document.execCommand("copy");
 }
 
-//Support functions//
+//////Support functions//////
 function isNegative(x)
 {
   if(parseFloat(x) < 0)
@@ -84,6 +93,7 @@ function isNegative(x)
 
 function updateResult(x)
 {
+
   document.getElementById("result").innerHTML = parseFloat(x);
 }
 
@@ -98,10 +108,9 @@ function finalizeResult(total, divisor)
     updateResult("");
   }
 }
-
+/*
 function updateNewRow(tr)
 {
-  // var parent =
   updateRowName(tr);
   updateRowShortName(tr);
   updateRowWeight(tr);
@@ -111,8 +120,6 @@ function updateNewRow(tr)
 
 function updateRowName(tr)
 {
-  console.log(tr);/////
-  console.log(tr.children[3].childNode)/////
   tr[0].innerHTML = "Activity " + (tr.length + 1);
 }
 
@@ -128,20 +135,12 @@ function updateRowWeight(tr)
 
 function updateRowGrade(tr)
 {
-  tr[3].getElementsByClassName("actual-grade").innerHTML = "";///////
+  tr[3].getElementsByClassName("actual-grade").innerHTML = "";
+  tr[3].getElementsByClassName("total-grade").innerHTML = "";
 }
 
 function updateRowPercent(tr)
 {
-
+  tr[3].getElementsByClassName("percentage").innerHTML = "";
 }
-
-// function giveRow(rowCount)
-// {
-//   var tr = document.createElement("tr");
-//   for(var i = 0; i < rowCount; i++)
-//   {
-//     tr.appendChild(document.createElement("td"));
-//   }
-//   return tr;
-// }
+*/

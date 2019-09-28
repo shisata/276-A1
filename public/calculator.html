@@ -6,13 +6,11 @@
     <title>Coursys - Formula Tester</title>
   </head>
   <body>
-    <link rel="stylesheet" type="text/css" href="css/calculator.css">
-    <script type="text/javascript" src="scripts/calculator.js"></script>
     <div class="main-box">
       <div class="grade-box">
         <h1 class="main-header">Grade Calculator</h1>
-        <div class="calculator-background">
-          <div class="calculator-box">
+        <div class="calculator-background" id="cal-background-box">
+          <div class="calculator-box" id="cal-box">
             <h4 class="sub-header">Activities</h4>
             <p>Give grades to the numeric actitivies:</p>
             <table id="grade-table">
@@ -62,8 +60,11 @@
             </ul>
           </div>
         </div>
+        <button type="button" onclick="newCalculatorBox()">New Calculator</button>
       </div>
     </div>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+    <script type="text/javascript" src="scripts/calculator.js"></script>
     <script type="text/javascript">updatePercentage()</script>
   </body>
 </html>

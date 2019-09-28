@@ -1,9 +1,11 @@
-body{
+body
+{
   background-color: #A5182B;
   padding: 0px 50px 60px 50px;
 }
 
-.main-box{
+.main-box
+{
   background-color: #FFFFFF;
   padding: 20px;
   border: solid #3B3A37;
@@ -14,48 +16,56 @@ body{
   box-shadow: 10px 0px 15px;
 }
 
-.grade-box{
+.grade-box
+{
   padding: 20px;
 }
 
-.main-header{
+.main-header
+{
   font-family: "Arial", sans-serif;
   font-weight: lighter;
 }
 
-.sub-header{
+.sub-header
+{
   color: #A7192F;
   font-size: 20px;
 }
 
-.calculator-background{
+.calculator-background
+{
   background-color: #E9EEF1;
   padding: 10px;
   width: 800px;
-  /*margin: 20px 0;*/
 }
 
-.calculator-box{
+.calculator-box
+{
   margin: 15px;
   padding-bottom: 25px;
 }
 
-table{
+table
+{
   border-spacing: 0px;
 }
 
-tr{
+tr
+{
   padding: 10px 40px 10px 10px;
 }
 
-td{
+td
+{
   border: 1px solid #CCCCCC;
   border-style: solid;
   width: 100px;
   padding: 10px 40px 10px 10px;
 }
 
-th{
+th
+{
   background-color: #DDDDDD;
   font-weight: bold;
   border-style: solid;
@@ -64,21 +74,25 @@ th{
   text-align: left;
 }
 
-.tips{
+.tips
+{
   font-size: 10px;
 }
 
-input{
+input
+{
   width: 70px;
   margin: 5px;
 }
 
-.button-list{
+.button-list
+{
   display: inline;
   float: right;
 }
 
-button{
+button
+{
   background-color: #A5182B;
   border: 0px;
   font-family: "Arial",sans-serif;
@@ -87,6 +101,7 @@ button{
   padding: 5px 10px 5px 10px;
 }
 
-button:hover{
+button:hover
+{
   background-color: #A5AA2B;
 }
