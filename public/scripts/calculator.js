@@ -68,7 +68,7 @@ function newActivity()
   var tr = originalTr.cloneNode(true);
   table.appendChild(tr);
 }
-/*
+
 function newCalculatorBox()
 {
   var cloneCalculatorBox = originalCalculatorBox.cloneNode(true);
