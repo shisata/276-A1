@@ -35,7 +35,8 @@ function weighted()
   {
     var currentWeight = weightList[i].value;
     var currentPercentage = percentageList[i].textContent;
-    if(currentWeight.length != 0 && !isNaN(currentWeight) && !isNegative(currentWeight))
+    if(currentPercentage.length != 0 && currentWeight.length != 0
+      && !isNaN(currentWeight) && !isNegative(currentWeight))
     {
       total += parseFloat(currentPercentage * currentWeight);
       divisor += parseFloat(currentWeight);
