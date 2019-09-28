@@ -68,13 +68,13 @@ function newActivity()
   var tr = originalTr.cloneNode(true);
   table.appendChild(tr);
 }
-
-function newCalculatorBox()
-{
-  var cloneCalculatorBox = originalCalculatorBox.cloneNode(true);
-  var parent = document.getElementById("cal-background-box");
-  parent.appendChild(cloneCalculatorBox);
-}
+//
+// function newCalculatorBox()
+// {
+//   var cloneCalculatorBox = originalCalculatorBox.cloneNode(true);
+//   var parent = document.getElementById("cal-background-box");
+//   parent.appendChild(cloneCalculatorBox);
+// }
 
 function copyText()
 {
